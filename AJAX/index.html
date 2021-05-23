@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>PHP Dischi</title>
+</head>
+
+<body>
+    <div id="app">
+
+        <!-- Header -->
+        <header class="header">
+            <section class="container">
+                <img class="logo" src="./img/logo.png" alt="logo">
+            </section>
+        </header>
+
+        <!-- Main -->
+        <main class="main">
+            <section class="container flex">
+
+                <!-- Card  -->
+                <div v-for="info in album" class="card flex">
+                    <img :src='info.poster' :alt="info.author">
+                    <h3> {{ info.title }} </h3>
+                    <p> {{ info.author }} </p>
+                    <p> {{ info.year }} </p>
+                    <p> {{ info.genre}} </p>
+                </div>
+
+            </section>
+        </main>
+
+        <!-- JS -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./js/script.js"></script>
+
+</body>
+
+</html>

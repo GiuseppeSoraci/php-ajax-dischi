@@ -1,0 +1,62 @@
+/* Generals */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+/* Utilities */
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Header */
+header {
+  padding: 10px;
+  background: #132431;
+}  
+.logo {
+  height: 40px;
+}
+  
+/* Main */
+.main {
+  height: calc(100vh - 50px);
+  background-color: #182d3d;
+} 
+.main .container {
+  justify-content: space-around;
+  padding: 0 20px;
+}
+
+/* Card */
+.card {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 230px;
+  height: 310px;
+  margin-top: 60px;
+  padding-top: 15px;
+  border-radius: 2px;
+  color: #fff;
+  background: #000000;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.card img {
+  padding-bottom: 10px;
+  width: 150px;
+}
+.card p {
+  padding: 5px 0;
+}
+.card:hover {
+  transform: scale(1.1);
+}
